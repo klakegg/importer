@@ -1,0 +1,15 @@
+from:
+  - identifier: _common
+    resources:
+      - path: codelist
+
+  - identifier: en16931-rules-ubl
+    resources:
+      - path: abstract
+        as: rules/en16931/sch/abstract
+      - path: codelist
+        as: rules/en16931/sch/codelist
+      - path: EN16931-UBL-validation.sch
+        as: rules/en16931/sch/main.sch
+      - path: UBL
+        as: rules/en16931/sch/UBL

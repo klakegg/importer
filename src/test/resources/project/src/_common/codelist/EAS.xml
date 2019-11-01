@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CodeList xmlns="urn:fdc:eprocurement.dev:2019:CodeList-1">
+    <Code>
+        <Identifier>0007</Identifier>
+    </Code>
+
+    <Code>
+        <Identifier>0088</Identifier>
+    </Code>
+
+    <Code>
+        <Identifier>0192</Identifier>
+    </Code>
+
+</CodeList>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Model xmlns="urn:fdc:difi.no:2019:vefa:publisher:Model-1">
+
+    <Identifier>ORDER</Identifier>
+    <Title>EHF Order</Title>
+
+    <Field>
+        <Identifier>IDENTIFIER</Identifier>
+        <Title>Document Identifier</Title>
+    </Field>
+
+    <Field>
+        <Identifier>ISSUING</Identifier>
+        <Title>Issuing Timestamp</Title>
+
+        <Aspect>
+            <Identifier>DATE</Identifier>
+            <Title>Date</Title>
+        </Aspect>
+        <Aspect>
+            <Identifier>TIME</Identifier>
+            <Title>Time</Title>
+        </Aspect>
+    </Field>
+
+    <Field>
+        <Identifier>CONTRACT</Identifier>
+        <Title>Contract Identifier</Title>
+    </Field>
+
+    <Group>
+        <Identifier>CUSTOMER</Identifier>
+        <Title>Customer</Title>
+
+        <Field>
+            <Identifier>NAME</Identifier>
+            <Title>Name</Title>
+        </Field>
+    </Group>
+
+    <Group>
+        <Identifier>PROVIDER</Identifier>
+        <Title>Provider</Title>
+
+        <Field>
+            <Identifier>NAME</Identifier>
+            <Title>Name</Title>
+        </Field>
+    </Group>
+
+    <Group>
+        <Identifier>DELIVERY</Identifier>
+        <Title>Delivery</Title>
+        <Cardinality>0..1</Cardinality>
+    </Group>
+
+    <Group>
+        <Identifier>LINE</Identifier>
+        <Title>Order Line</Title>
+        <Cardinality>1..n</Cardinality>
+
+        <Group>
+            <Identifier>PRODUCT</Identifier>
+            <Title>Product</Title>
+        </Group>
+
+        <Group>
+            <Identifier>DELIVERY</Identifier>
+            <Title>Delivery</Title>
+            <Cardinality>0..1</Cardinality>
+        </Group>
+    </Group>
+</Model>

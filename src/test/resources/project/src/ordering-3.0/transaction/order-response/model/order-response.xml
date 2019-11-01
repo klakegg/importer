@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Model xmlns="urn:fdc:difi.no:2019:vefa:publisher:Model-1">
+
+    <Identifier>RESPONSE</Identifier>
+    <Title>Order Response</Title>
+
+    <Field>
+        <Identifier>IDENTIFIER</Identifier>
+        <Title>Order Response Identifier</Title>
+    </Field>
+
+    <Field>
+        <Identifier>TIMESTAMP</Identifier>
+        <Title>Issuing Timestamp</Title>
+
+        <Aspect>
+            <Identifier>DATE</Identifier>
+            <Title>Date</Title>
+        </Aspect>
+        <Aspect>
+            <Identifier>TIME</Identifier>
+            <Title>Time</Title>
+        </Aspect>
+    </Field>
+
+    <Field>
+        <Identifier>CONTRACT</Identifier>
+        <Title>Contract Identifier</Title>
+    </Field>
+
+    <Field>
+        <Identifier>ORDER</Identifier>
+        <Title>Order Reference</Title>
+    </Field>
+
+    <Group>
+        <Identifier>CUSTOMER</Identifier>
+        <Title>Customer</Title>
+
+        <Field>
+            <Identifier>NAME</Identifier>
+            <Title>Name</Title>
+        </Field>
+    </Group>
+
+    <Group>
+        <Identifier>PROVIDER</Identifier>
+        <Title>Provider</Title>
+
+        <Field>
+            <Identifier>NAME</Identifier>
+            <Title>Name</Title>
+        </Field>
+    </Group>
+
+</Model>
